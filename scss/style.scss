@@ -1,5 +1,5 @@
 @import "_media";
-@import "_colores";
+@import "_variables";
 
 html {
 
@@ -31,10 +31,11 @@ html {
     }
 
     h2,h3,h4 {
-    font-size: 2rem;
-    font-weight: bolder;
-    letter-spacing: .2rem;
-    margin: 1rem 0;
+    
+        font-size: 2rem;
+        font-weight: bolder;
+        letter-spacing: .2rem;
+        margin: 1rem 0;
     }
 
     h5 {
@@ -218,12 +219,12 @@ html {
                 text-transform: uppercase;
             }
 
-
-            @include mediaqueri(xl){
+            @include mediaqueri(lg) {
                 
                 .nav-link i {
                     display: none;
                 }
+                
                 .nav-link::before {
                     content: "";
                     position: absolute;
@@ -256,7 +257,7 @@ html {
         
             }
 
-            @include mediaqueri(lg) {
+            @include mediaqueri(md) {
 
                 .nav-link {
                     margin: 1rem 0;
@@ -482,11 +483,13 @@ html {
     .main__section span {
 
         font-size: 1.2rem;
+
     }
 
     .quehacer section:nth-child(1) {
         background-color: #FF9E00;
         color: white;
+
     }
 
     .row {
@@ -588,8 +591,8 @@ html {
         color: #FF9E00;
     }
 
-
     /*=============== PLANEA TU VIAJE ==================*/
+
 
     .planear__box--reverse {
         flex-direction: row-reverse;
