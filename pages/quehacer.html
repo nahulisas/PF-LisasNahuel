@@ -1,522 +1,688 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="../img/logo.png" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../style.css" />
-    <script
-      src="https://kit.fontawesome.com/113a7d4d7b.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <title>Viví El Chalten | Capital nacional del trekking</title>
-  </head>
-  <!-- Comienza el body -->
-  <body>
-    <header class="header">
-      <!-- Banner -->
-      <div class="header__banner--secundario">
-        <img src="../img/quehacer/quehacer-banner.jpg" alt="" />
-        <h1>El Chaltel, capital nacional del trekking</h1>
-      </div>
-      <!-- Nav Bar -->
-      <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="../img/logo.png" alt="" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                El Chalten
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="../img/logo.png" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="../scss/style.css" />
+        <script
+            src="https://kit.fontawesome.com/113a7d4d7b.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+        <title>Viví El Chalten | Capital nacional del trekking</title>
+    </head>
+    <!-- Comienza el body -->
+    <body>
+        <header class="header">
+            <!-- Banner -->
+            <div class="header__banner--secundario">
+                <img src="../img/quehacer/quehacer-banner.jpg" alt="" />
+                <h1>El Chaltel, capital nacional del trekking</h1>
             </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link" href="../index.html"
-                    ><i class="fa-solid fa-house"></i>Inicio</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="galeria.html"
-                    ><i class="fa-solid fa-camera"></i>Galeria</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="quehacer.html"
-                    ><i class="fa-solid fa-circle-info"></i>Que Hacer</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contacto.html"
-                    ><i class="fa-solid fa-envelope"></i>Contacto</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="planea.html"
-                    ><i class="fa-solid fa-pen"></i>Planea tu viaje</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
+            <!-- Nav Bar -->
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="../img/logo.png" alt="" />
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="offcanvas offcanvas-end"
+                        tabindex="-1"
+                        id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel"
+                    >
+                        <div class="offcanvas-header">
+                            <h5
+                                class="offcanvas-title"
+                                id="offcanvasNavbarLabel"
+                            >
+                                El Chalten
+                            </h5>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul
+                                class="navbar-nav justify-content-end flex-grow-1 pe-3"
+                            >
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html"
+                                        ><i class="fa-solid fa-house"></i
+                                        >Inicio</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="galeria.html"
+                                        ><i class="fa-solid fa-camera"></i
+                                        >Galeria</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link active"
+                                        href="quehacer.html"
+                                        ><i class="fa-solid fa-circle-info"></i
+                                        >Que Hacer</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contacto.html"
+                                        ><i class="fa-solid fa-envelope"></i
+                                        >Contacto</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="planea.html"
+                                        ><i class="fa-solid fa-pen"></i>Planea
+                                        tu viaje</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Main Content -->
+        <div class="quehacer">
+            <section class="main__section">
+                <div class="contenedor">
+                    <h2>Que hacer en el Chalten?</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Debitis minima corrupti velit dignissimos vero
+                        temporibus ab neque error porro? Exercitationem
+                        laboriosam repudiandae saepe dolor, sed magni eos
+                        incidunt debitis perferendis reprehenderit, ex tempora
+                        quis rem porro sint impedit officia eum delectus modi
+                        vero, quo vitae eveniet deleniti. Minus, consequatur
+                        iste.
+                    </p>
+                    <span
+                        ><i class="fa-solid fa-person-walking"></i
+                        >Difucultad</span
+                    >
+                    <span
+                        ><i class="fa-solid fa-person-walking"></i
+                        >Duracion</span
+                    >
+                </div>
+            </section>
+            <!-- Caminatas -->
+            <section class="main__section">
+                <div class="contenedor">
+                    <div class="row">
+                        <div class="col-md-12 col-md-12">
+                            <div class="section__title">
+                                <h2>El mejor trekking</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="card">
+                                <img
+                                    src="../img/quehacer/caminatas/lagunadelostres.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Laguna de los tres
+                                    </h5>
+                                    <h6 class="card-text">
+                                        El trekking por excelencia, el mas
+                                        buscado por todos
+                                    </h6>
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Difucultad</span
+                                    >
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Duracion</span
+                                    >
+                                    <a href="#" class="card__btn">Ver mas</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="card">
+                                <img
+                                    src="../img/quehacer/caminatas/lagunadelostres.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Laguna de los tres
+                                    </h5>
+                                    <h6 class="card-text">
+                                        El trekking por excelencia, el mas
+                                        buscado por todos
+                                    </h6>
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Difucultad</span
+                                    >
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Duracion</span
+                                    >
+                                    <a href="#" class="card__btn">Ver mas</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="card">
+                                <img
+                                    src="../img/quehacer/caminatas/lagunadelostres.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Laguna de los tres
+                                    </h5>
+                                    <h6 class="card-text">
+                                        El trekking por excelencia, el mas
+                                        buscado por todos
+                                    </h6>
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Difucultad</span
+                                    >
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Duracion</span
+                                    >
+                                    <a href="#" class="card__btn">Ver mas</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="card">
+                                <img
+                                    src="../img/quehacer/caminatas/lagunadelostres.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Laguna de los tres
+                                    </h5>
+                                    <h6 class="card-text">
+                                        El trekking por excelencia, el mas
+                                        buscado por todos
+                                    </h6>
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Difucultad</span
+                                    >
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Duracion</span
+                                    >
+                                    <a href="#" class="card__btn">Ver mas</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="card">
+                                <img
+                                    src="../img/quehacer/caminatas/lagunadelostres.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Laguna de los tres
+                                    </h5>
+                                    <h6 class="card-text">
+                                        El trekking por excelencia, el mas
+                                        buscado por todos
+                                    </h6>
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Difucultad</span
+                                    >
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Duracion</span
+                                    >
+                                    <a href="#" class="card__btn">Ver mas</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="card">
+                                <img
+                                    src="../img/quehacer/caminatas/lagunadelostres.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Laguna de los tres
+                                    </h5>
+                                    <h6 class="card-text">
+                                        El trekking por excelencia, el mas
+                                        buscado por todos
+                                    </h6>
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Difucultad</span
+                                    >
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Duracion</span
+                                    >
+                                    <a href="#" class="card__btn">Ver mas</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="card">
+                                <img
+                                    src="../img/quehacer/caminatas/lagunadelostres.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Laguna de los tres
+                                    </h5>
+                                    <h6 class="card-text">
+                                        El trekking por excelencia, el mas
+                                        buscado por todos
+                                    </h6>
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Difucultad</span
+                                    >
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Duracion</span
+                                    >
+                                    <a href="#" class="card__btn">Ver mas</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="card">
+                                <img
+                                    src="../img/quehacer/caminatas/lagunadelostres.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Laguna de los tres
+                                    </h5>
+                                    <h6 class="card-text">
+                                        El trekking por excelencia, el mas
+                                        buscado por todos
+                                    </h6>
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Difucultad</span
+                                    >
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Duracion</span
+                                    >
+                                    <a href="#" class="card__btn">Ver mas</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Excurciones -->
+            <section class="main__section">
+                <div class="contenedor">
+                    <div class="row">
+                        <div class="col-md-12 col-md-4">
+                            <div class="section__title">
+                                <h2>El mejor trekking</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="card">
+                                <img
+                                    src="../img/quehacer/caminatas/lagunadelostres.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Laguna de los tres
+                                    </h5>
+                                    <h6 class="card-text">
+                                        El trekking por excelencia, el mas
+                                        buscado por todos
+                                    </h6>
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Difucultad</span
+                                    >
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Duracion</span
+                                    >
+                                    <a href="#" class="card__btn">Ver mas</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="card">
+                                <img
+                                    src="../img/quehacer/caminatas/lagunadelostres.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Laguna de los tres
+                                    </h5>
+                                    <h6 class="card-text">
+                                        El trekking por excelencia, el mas
+                                        buscado por todos
+                                    </h6>
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Difucultad</span
+                                    >
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Duracion</span
+                                    >
+                                    <a href="#" class="card__btn">Ver mas</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="card">
+                                <img
+                                    src="../img/quehacer/caminatas/lagunadelostres.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Laguna de los tres
+                                    </h5>
+                                    <h6 class="card-text">
+                                        El trekking por excelencia, el mas
+                                        buscado por todos
+                                    </h6>
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Difucultad</span
+                                    >
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Duracion</span
+                                    >
+                                    <a href="#" class="card__btn">Ver mas</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="card">
+                                <img
+                                    src="../img/quehacer/caminatas/lagunadelostres.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Laguna de los tres
+                                    </h5>
+                                    <h6 class="card-text">
+                                        El trekking por excelencia, el mas
+                                        buscado por todos
+                                    </h6>
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Difucultad</span
+                                    >
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Duracion</span
+                                    >
+                                    <a href="#" class="card__btn">Ver mas</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="card">
+                                <img
+                                    src="../img/quehacer/caminatas/lagunadelostres.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Laguna de los tres
+                                    </h5>
+                                    <h6 class="card-text">
+                                        El trekking por excelencia, el mas
+                                        buscado por todos
+                                    </h6>
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Difucultad</span
+                                    >
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Duracion</span
+                                    >
+                                    <a href="#" class="card__btn">Ver mas</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="card">
+                                <img
+                                    src="../img/quehacer/caminatas/lagunadelostres.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Laguna de los tres
+                                    </h5>
+                                    <h6 class="card-text">
+                                        El trekking por excelencia, el mas
+                                        buscado por todos
+                                    </h6>
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Difucultad</span
+                                    >
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Duracion</span
+                                    >
+                                    <a href="#" class="card__btn">Ver mas</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="card">
+                                <img
+                                    src="../img/quehacer/caminatas/lagunadelostres.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Laguna de los tres
+                                    </h5>
+                                    <h6 class="card-text">
+                                        El trekking por excelencia, el mas
+                                        buscado por todos
+                                    </h6>
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Difucultad</span
+                                    >
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Duracion</span
+                                    >
+                                    <a href="#" class="card__btn">Ver mas</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="card">
+                                <img
+                                    src="../img/quehacer/caminatas/lagunadelostres.jpg"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Laguna de los tres
+                                    </h5>
+                                    <h6 class="card-text">
+                                        El trekking por excelencia, el mas
+                                        buscado por todos
+                                    </h6>
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Difucultad</span
+                                    >
+                                    <span
+                                        ><i
+                                            class="fa-solid fa-person-walking"
+                                        ></i
+                                        >Duracion</span
+                                    >
+                                    <a href="#" class="card__btn">Ver mas</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-      </nav>
-    </header>
-    <!-- Main Content -->
-    <div class="quehacer">
-      <section class="main__section">
-        <div class="contenedor">
-          <h2>Que hacer en el Chalten?</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-            minima corrupti velit dignissimos vero temporibus ab neque error
-            porro? Exercitationem laboriosam repudiandae saepe dolor, sed magni
-            eos incidunt debitis perferendis reprehenderit, ex tempora quis rem
-            porro sint impedit officia eum delectus modi vero, quo vitae eveniet
-            deleniti. Minus, consequatur iste.
-          </p>
-          <span><i class="fa-solid fa-person-walking"></i>Difucultad</span>
-          <span><i class="fa-solid fa-person-walking"></i>Duracion</span>
-        </div>
-      </section>
-      <!-- Caminatas -->
-      <section class="main__section">
-        <div class="contenedor">
-          <div class="row">
-            <div class="col-md-12 col-md-12">
-              <div class="section__title">
-                <h2>El mejor trekking</h2>
-              </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <img src="../img/logo.png" alt="" class="logo-footer" />
+            <div class="social-media">
+                <a href="https://www.facebook.com/elchaltencom" target="_blank">
+                    <i class="fa-brands fa-facebook-f"> </i>
+                </a>
+                <a href="https://www.instagram.com/el_chalten/" target="_blank">
+                    <i class="fa-brands fa-instagram" href=""></i>
+                </a>
+                <a href="https://twitter.com/elchaltencom" target="_blank">
+                    <i class="fa-brands fa-x-twitter" href=""></i>
+                </a>
+                <a href="https://www.youtube.com/@elchaltencom" target="_blank">
+                    <i class="fa-brands fa-youtube" href=""></i>
+                </a>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="card">
-                <img
-                  src="../img/quehacer/caminatas/lagunadelostres.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Laguna de los tres</h5>
-                  <h6 class="card-text">
-                    El trekking por excelencia, el mas buscado por todos
-                  </h6>
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Difucultad</span
-                  >
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Duracion</span
-                  >
-                  <a href="#" class="card__btn">Ver mas</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="card">
-                <img
-                  src="../img/quehacer/caminatas/lagunadelostres.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Laguna de los tres</h5>
-                  <h6 class="card-text">
-                    El trekking por excelencia, el mas buscado por todos
-                  </h6>
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Difucultad</span
-                  >
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Duracion</span
-                  >
-                  <a href="#" class="card__btn">Ver mas</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="card">
-                <img
-                  src="../img/quehacer/caminatas/lagunadelostres.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Laguna de los tres</h5>
-                  <h6 class="card-text">
-                    El trekking por excelencia, el mas buscado por todos
-                  </h6>
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Difucultad</span
-                  >
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Duracion</span
-                  >
-                  <a href="#" class="card__btn">Ver mas</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="card">
-                <img
-                  src="../img/quehacer/caminatas/lagunadelostres.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Laguna de los tres</h5>
-                  <h6 class="card-text">
-                    El trekking por excelencia, el mas buscado por todos
-                  </h6>
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Difucultad</span
-                  >
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Duracion</span
-                  >
-                  <a href="#" class="card__btn">Ver mas</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="card">
-                <img
-                  src="../img/quehacer/caminatas/lagunadelostres.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Laguna de los tres</h5>
-                  <h6 class="card-text">
-                    El trekking por excelencia, el mas buscado por todos
-                  </h6>
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Difucultad</span
-                  >
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Duracion</span
-                  >
-                  <a href="#" class="card__btn">Ver mas</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="card">
-                <img
-                  src="../img/quehacer/caminatas/lagunadelostres.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Laguna de los tres</h5>
-                  <h6 class="card-text">
-                    El trekking por excelencia, el mas buscado por todos
-                  </h6>
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Difucultad</span
-                  >
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Duracion</span
-                  >
-                  <a href="#" class="card__btn">Ver mas</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="card">
-                <img
-                  src="../img/quehacer/caminatas/lagunadelostres.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Laguna de los tres</h5>
-                  <h6 class="card-text">
-                    El trekking por excelencia, el mas buscado por todos
-                  </h6>
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Difucultad</span
-                  >
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Duracion</span
-                  >
-                  <a href="#" class="card__btn">Ver mas</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="card">
-                <img
-                  src="../img/quehacer/caminatas/lagunadelostres.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Laguna de los tres</h5>
-                  <h6 class="card-text">
-                    El trekking por excelencia, el mas buscado por todos
-                  </h6>
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Difucultad</span
-                  >
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Duracion</span
-                  >
-                  <a href="#" class="card__btn">Ver mas</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Excurciones -->
-      <section class="main__section">
-        <div class="contenedor">
-          <div class="row">
-            <div class="col-md-12 col-md-4">
-              <div class="section__title">
-                <h2>El mejor trekking</h2>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="card">
-                <img
-                  src="../img/quehacer/caminatas/lagunadelostres.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Laguna de los tres</h5>
-                  <h6 class="card-text">
-                    El trekking por excelencia, el mas buscado por todos
-                  </h6>
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Difucultad</span
-                  >
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Duracion</span
-                  >
-                  <a href="#" class="card__btn">Ver mas</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="card">
-                <img
-                  src="../img/quehacer/caminatas/lagunadelostres.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Laguna de los tres</h5>
-                  <h6 class="card-text">
-                    El trekking por excelencia, el mas buscado por todos
-                  </h6>
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Difucultad</span
-                  >
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Duracion</span
-                  >
-                  <a href="#" class="card__btn">Ver mas</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="card">
-                <img
-                  src="../img/quehacer/caminatas/lagunadelostres.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Laguna de los tres</h5>
-                  <h6 class="card-text">
-                    El trekking por excelencia, el mas buscado por todos
-                  </h6>
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Difucultad</span
-                  >
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Duracion</span
-                  >
-                  <a href="#" class="card__btn">Ver mas</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="card">
-                <img
-                  src="../img/quehacer/caminatas/lagunadelostres.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Laguna de los tres</h5>
-                  <h6 class="card-text">
-                    El trekking por excelencia, el mas buscado por todos
-                  </h6>
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Difucultad</span
-                  >
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Duracion</span
-                  >
-                  <a href="#" class="card__btn">Ver mas</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="card">
-                <img
-                  src="../img/quehacer/caminatas/lagunadelostres.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Laguna de los tres</h5>
-                  <h6 class="card-text">
-                    El trekking por excelencia, el mas buscado por todos
-                  </h6>
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Difucultad</span
-                  >
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Duracion</span
-                  >
-                  <a href="#" class="card__btn">Ver mas</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="card">
-                <img
-                  src="../img/quehacer/caminatas/lagunadelostres.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Laguna de los tres</h5>
-                  <h6 class="card-text">
-                    El trekking por excelencia, el mas buscado por todos
-                  </h6>
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Difucultad</span
-                  >
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Duracion</span
-                  >
-                  <a href="#" class="card__btn">Ver mas</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="card">
-                <img
-                  src="../img/quehacer/caminatas/lagunadelostres.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Laguna de los tres</h5>
-                  <h6 class="card-text">
-                    El trekking por excelencia, el mas buscado por todos
-                  </h6>
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Difucultad</span
-                  >
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Duracion</span
-                  >
-                  <a href="#" class="card__btn">Ver mas</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              <div class="card">
-                <img
-                  src="../img/quehacer/caminatas/lagunadelostres.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Laguna de los tres</h5>
-                  <h6 class="card-text">
-                    El trekking por excelencia, el mas buscado por todos
-                  </h6>
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Difucultad</span
-                  >
-                  <span
-                    ><i class="fa-solid fa-person-walking"></i>Duracion</span
-                  >
-                  <a href="#" class="card__btn">Ver mas</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    <!-- Footer -->
-    <footer class="footer">
-      <img src="../img/logo.png" alt="" class="logo-footer" />
-      <div class="social-media">
-        <a href="https://www.facebook.com/elchaltencom" target="_blank">
-          <i class="fa-brands fa-facebook-f"> </i>
-        </a>
-        <a href="https://www.instagram.com/el_chalten/" target="_blank">
-          <i class="fa-brands fa-instagram" href=""></i>
-        </a>
-        <a href="https://twitter.com/elchaltencom" target="_blank">
-          <i class="fa-brands fa-x-twitter" href=""></i>
-        </a>
-        <a href="https://www.youtube.com/@elchaltencom" target="_blank">
-          <i class="fa-brands fa-youtube" href=""></i>
-        </a>
-      </div>
-      <p>
-        © Viví El Chalten. Todos los derechos reservados creado por
-        <a href="">Nahuel Lisas</a>
-        para
-        <a href="https://www.coderhouse.com/ar/" target="_blank">CoderHouse</a>
-      </p>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+            <p>
+                © Viví El Chalten. Todos los derechos reservados creado por
+                <a href="">Nahuel Lisas</a>
+                para
+                <a href="https://www.coderhouse.com/ar/" target="_blank"
+                    >CoderHouse</a
+                >
+            </p>
+        </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>

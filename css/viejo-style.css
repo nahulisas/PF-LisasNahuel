@@ -4,10 +4,8 @@ html {
     font-size: 62.5%;
 }
 :root {
-
-    --bg-yellow: #FF9E00;
+    --bg-yellow: #ff9e00;
 }
-
 
 * {
     margin: 0;
@@ -15,8 +13,6 @@ html {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-
 
 .contenedor {
     max-width: 1320px;
@@ -29,10 +25,12 @@ html {
     flex-wrap: wrap;
 }
 
-h2,h3,h4 {
+h2,
+h3,
+h4 {
     font-size: 2rem;
     font-weight: bolder;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
     margin: 1rem 0;
 }
 
@@ -65,9 +63,8 @@ i {
 }
 
 .main__section:nth-child(2n) {
-    background-color: rgba(211, 211, 211, 0.141)
+    background-color: rgba(211, 211, 211, 0.141);
 }
-
 
 /*=============== BANNER ==================*/
 
@@ -94,15 +91,13 @@ i {
     height: 100vh;
 }
 
-
-
 /* ==== TITULO INDEX ===== */
 
 .header__titulo {
     width: 100%;
     height: 100%;
     position: absolute;
-    background:rgba(0, 0, 0, 0.417);
+    background: rgba(0, 0, 0, 0.417);
     bottom: 0;
     display: flex;
     justify-content: flex-start;
@@ -128,45 +123,56 @@ i {
     font-size: 5rem;
 }
 
-.titulo__contenido p{
+.titulo__contenido p {
     font-size: 2.5rem;
     font-weight: lighter;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .header__timer {
     width: 100%;
-    height: .2rem;
-    background-color: #FF9E00;
+    height: 0.2rem;
+    background-color: #ff9e00;
     position: absolute;
     bottom: 0;
     animation: timer 5s infinite ease-in-out;
 }
 
-
 @keyframes slide {
-   
-    0% { margin-left: 0;}
-    20% { margin-left: 0;}
+    0% {
+        margin-left: 0;
+    }
+    20% {
+        margin-left: 0;
+    }
 
-    25% { margin-left: -100%;}
-    45% { margin-left: -100%;}
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
 
-    50% { margin-left: -200%;}
-    70% { margin-left: -200%;}
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
 
-    75% { margin-left: -300%;}
-    100% { margin-left: -300%;}
-
-
-
+    75% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -300%;
+    }
 }
 
 @keyframes timer {
-    0% {width: 0;}
+    0% {
+        width: 0;
+    }
 }
-
-
 
 .header__banner--secundario {
     width: 100%;
@@ -186,7 +192,7 @@ i {
     padding: 2rem;
     margin: 0;
     width: 100%;
-    background-color: rgb(0, 0, 0, .6)
+    background-color: rgb(0, 0, 0, 0.6);
 }
 
 .header__banner--secundario img {
@@ -195,9 +201,7 @@ i {
     opacity: 50%;
 }
 
-
 /*=============== NAVBAR ==================*/
-
 
 .header {
     display: flex;
@@ -209,12 +213,12 @@ header .navbar {
     height: 70px;
     display: flex;
     align-content: center;
-    -webkit-box-shadow: 0px 5px 11px -1px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 5px 11px -1px rgba(0,0,0,0.75);
-        box-shadow: 0px 5px 11px -1px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 5px 11px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 5px 11px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 5px 11px -1px rgba(0, 0, 0, 0.1);
 }
 .navbar img {
-    width:7.5rem;
+    width: 7.5rem;
 }
 
 .nav-link {
@@ -226,7 +230,6 @@ header .navbar {
 }
 
 @media (min-width: 991px) {
-    
     .nav-link i {
         display: none;
     }
@@ -239,10 +242,10 @@ header .navbar {
         width: 0;
         height: 2px;
         visibility: hidden;
-        background-color: #FF9E00;
-        transition: width .2s ease-in-out;
+        background-color: #ff9e00;
+        transition: width 0.2s ease-in-out;
     }
-    
+
     .nav-link:hover::before {
         content: "";
         position: absolute;
@@ -252,9 +255,9 @@ header .navbar {
         width: 100%;
         height: 2px;
         visibility: visible;
-        background-color: #FF9E00;
+        background-color: #ff9e00;
     }
-    
+
     .nav-link.active::before {
         width: 100%;
         visibility: visible;
@@ -275,14 +278,12 @@ header .navbar {
     background-color: #464646;
 }
 
-
 .social-media {
     display: flex;
     justify-content: center;
     width: 50%;
     border-bottom: 1px solid #595959;
     padding: 2rem 0 3rem 0;
-
 }
 
 .social-media i {
@@ -301,16 +302,15 @@ header .navbar {
 
 .social-media i:hover {
     color: #707070;
-    background-color:transparent;
+    background-color: transparent;
     border: 1px solid #707070;
     transition: all 0.3s ease;
 }
 
 footer p {
-    
     color: #595959;
     padding: 3rem;
-} 
+}
 
 footer p a {
     color: #707070;
@@ -320,8 +320,6 @@ footer p a {
 footer .logo-footer {
     width: 9rem;
 }
-
-
 
 /*=============== INDEX ==================*/
 
@@ -369,7 +367,7 @@ footer .logo-footer {
     width: 100px;
     padding: 1rem;
     text-decoration: none;
-    background-color: #FF9E00;
+    background-color: #ff9e00;
     transition: all 0.3s ease;
     border-radius: 7px;
     border: 1px solid transparent;
@@ -378,17 +376,17 @@ footer .logo-footer {
 
 .contenido-index a:hover {
     background-color: white;
-    color: #FF9E00;
-    border: 1px solid #FF9E00;
+    color: #ff9e00;
+    border: 1px solid #ff9e00;
 }
 /*=============== GALERIA ==================*/
 
 .galeria__fotos {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(5,400px);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 400px);
     grid-auto-rows: 300px;
-    gap: .5rem;
+    gap: 0.5rem;
 }
 
 .galeria__imagen {
@@ -433,12 +431,9 @@ footer .logo-footer {
     grid-row: span 2;
 }
 
-
-
 /*=============== QUE HACER ==================*/
 
 .main__section span {
-
     font-size: 1.2rem;
 }
 
@@ -451,37 +446,36 @@ footer .logo-footer {
     gap: 2rem 0;
 }
 .card {
-   border: none;
+    border: none;
 }
 
 .card-body {
     display: flex;
     flex-direction: column;
-    gap: .2rem;
+    gap: 0.2rem;
 }
 .card__btn {
-    background-color: #FF9E00;
+    background-color: #ff9e00;
     display: block;
     color: #fff;
     text-decoration: none;
     text-align: center;
-    border-radius: .8rem;
-    padding: .5rem 1.2rem;
+    border-radius: 0.8rem;
+    padding: 0.5rem 1.2rem;
     cursor: pointer;
     border: 1px solid transparent;
     width: 100px;
     font-size: 1.5rem;
-    transition: all .2s ease;
+    transition: all 0.2s ease;
 }
 
 .card__btn:hover {
     background-color: transparent;
-    border: 1px solid #FF9E00;
-    color: #FF9E00;
+    border: 1px solid #ff9e00;
+    color: #ff9e00;
 }
 
 /*=============== CONTACTO ==================*/
-
 
 .contacto__formulario {
     width: 100%;
@@ -496,18 +490,18 @@ footer .logo-footer {
     padding: 1rem;
     border: none;
     height: 50px;
-    border-radius: .6rem;
-    border-left: 1px solid #FF9E00;
+    border-radius: 0.6rem;
+    border-left: 1px solid #ff9e00;
     background-color: white;
     color: black;
-    -webkit-box-shadow: -7px 7px 24px -12px rgba(143,143,143,0.59);
-    -moz-box-shadow: -7px 7px 24px -12px rgba(143,143,143,0.59);
-    box-shadow: -7px 7px 24px -12px rgba(143,143,143,0.59);
+    -webkit-box-shadow: -7px 7px 24px -12px rgba(143, 143, 143, 0.59);
+    -moz-box-shadow: -7px 7px 24px -12px rgba(143, 143, 143, 0.59);
+    box-shadow: -7px 7px 24px -12px rgba(143, 143, 143, 0.59);
 }
 
 .contacto__formulario input::placeholder,
 .contacto__formulario textarea::placeholder {
-    opacity: .4;
+    opacity: 0.4;
 }
 
 .contacto__formulario textarea {
@@ -515,13 +509,13 @@ footer .logo-footer {
     padding: 1rem;
     border: none;
     min-width: 100%;
-    border-radius: .6rem;
-    border-left: 1px solid #FF9E00;
+    border-radius: 0.6rem;
+    border-left: 1px solid #ff9e00;
     background-color: white;
     color: black;
-    -webkit-box-shadow: -7px 7px 24px -12px rgba(143,143,143,0.59);
-    -moz-box-shadow: -7px 7px 24px -12px rgba(143,143,143,0.59);
-    box-shadow: -7px 7px 24px -12px rgba(143,143,143,0.59);
+    -webkit-box-shadow: -7px 7px 24px -12px rgba(143, 143, 143, 0.59);
+    -moz-box-shadow: -7px 7px 24px -12px rgba(143, 143, 143, 0.59);
+    box-shadow: -7px 7px 24px -12px rgba(143, 143, 143, 0.59);
 }
 
 .contacto__formulario button {
@@ -530,18 +524,17 @@ footer .logo-footer {
     padding: 1rem;
     border: 1px solid transparent;
     border-radius: 7px;
-    background-color: #FF9E00;
+    background-color: #ff9e00;
     color: white;
     cursor: pointer;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 }
 
 .contacto__formulario button:hover {
     background-color: white;
-    border: 1px solid #FF9E00;
-    color: #FF9E00;
+    border: 1px solid #ff9e00;
+    color: #ff9e00;
 }
-
 
 /*=============== PLANEA TU VIAJE ==================*/
 
@@ -555,7 +548,6 @@ footer .logo-footer {
     margin: 4rem 0;
     object-fit: cover;
 }
-
 
 .planear__box {
     width: 100%;
@@ -581,7 +573,7 @@ footer .logo-footer {
     height: 30rem;
     border-radius: 1rem;
     text-align: center;
-    background-color: #FF9E00;
+    background-color: #ff9e00;
 }
 
 .planear__box__item h3 {
@@ -595,30 +587,26 @@ footer .logo-footer {
     display: block;
     width: 200px;
     text-decoration: none;
-    background-color: #FF9E00;
+    background-color: #ff9e00;
     color: #fff;
     font-size: 1.2rem;
     border: 1px solid transparent;
-    border-radius: .7rem;
+    border-radius: 0.7rem;
     text-align: center;
-    padding: 1rem .8rem;
+    padding: 1rem 0.8rem;
     margin-top: 2rem;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
 }
 
 .planear__box a:hover {
     background-color: white;
-    border: 1px solid #FF9E00;
-    color: #FF9E00;
-
+    border: 1px solid #ff9e00;
+    color: #ff9e00;
 }
-
 
 /*=============== RESPONSIVE DESIGN ==================*/
 
-
 @media screen and (width < 992px) {
-    
     .contenedor {
         width: 100%;
         padding: 1rem;
@@ -632,7 +620,7 @@ footer .logo-footer {
 
     .nav-link > i {
         margin-right: 1rem;
-        color: #FF9E00;
+        color: #ff9e00;
     }
 
     header .navbar {
@@ -646,7 +634,7 @@ footer .logo-footer {
         border: none;
         font-size: 1.6rem;
     }
-    
+
     .navbar-toggler:focus {
         box-shadow: none;
     }
@@ -655,14 +643,9 @@ footer .logo-footer {
         width: 4rem;
         margin-left: 1rem;
     }
-
-
-
-    
 }
 
 @media screen and (width <= 768px) {
-
     /* =====INDEX===== */
 
     .box-index {
@@ -702,43 +685,21 @@ footer .logo-footer {
     .planear__box__item:nth-child(1) {
         width: 100%;
     }
-
 }
 
 @media screen and (width <= 600px) {
-
-
     /* =====GALERIA===== */
 
     .galeria__fotos {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(9,400px);
+        grid-template-rows: repeat(9, 400px);
     }
 
     .galeria__fotos > .galeria__imagen {
         grid-column: span 1;
         grid-row: span 1;
     }
-
-
-
 }
 
 @media screen and (width <= 480px) {
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

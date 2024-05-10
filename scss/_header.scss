@@ -1,0 +1,211 @@
+.header {
+    display: flex;
+    justify-content: center;
+
+    .header__banner {
+        position: relative;
+        width: 100%;
+        height: 95vh;
+        background-color: black;
+        margin-bottom: 4rem;
+        overflow: hidden;
+
+        .header__slide {
+            display: flex;
+            list-style: none;
+            width: 400%;
+            margin: 0;
+            padding: 0;
+            animation: slide 20s infinite ease;
+
+            .header__slide__item {
+                width: 100%;
+                height: 100vh;
+            }
+
+            @keyframes slide {
+    
+                0% { margin-left: 0;}
+                20% { margin-left: 0;}
+        
+                25% { margin-left: -100%;}
+                45% { margin-left: -100%;}
+        
+                50% { margin-left: -200%;}
+                70% { margin-left: -200%;}
+        
+                75% { margin-left: -300%;}
+                100% { margin-left: -300%;}
+        
+        
+        
+            }
+        }
+
+        .header__timer {
+            width: 100%;
+            height: .5rem;
+            background-color: $main-color;
+            position: absolute;
+            bottom: 0;
+            animation: timer 5s infinite ease-in-out;
+
+            @keyframes timer {
+                0% {width: 0;}
+            }
+        }
+    
+        
+    
+        .header__titulo {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background:rgba(0, 0, 0, 0.417);
+            bottom: 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            
+            .titulo__contenido {
+                padding: 1rem;
+                width: 100%;
+            }
+
+            h1,
+            h2,
+            p {
+                display: block;
+                font-size: clamp(5rem, 10vw, 10rem);
+                color: white;
+                font-weight: bolder;
+                margin: 0;
+                padding: 0;
+            }
+        
+            h2 {
+                font-size: 5rem;
+            }
+        
+            p{
+                font-size: 2.5rem;
+                font-weight: lighter;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+        }
+
+        
+        }
+
+        .header__banner--secundario {
+            width: 100%;
+            height: 70vh;
+            background-color: black;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+
+            h1 {
+                color: white;
+                font-weight: lighter;
+                font-style: italic;
+                position: absolute;
+                bottom: 0%;
+                padding: 2rem;
+                margin: 0;
+                width: 100%;
+                background-color: rgb(0, 0, 0, .6)
+            }
+        
+            img {
+                width: 100%;
+                object-fit: cover;
+                opacity: 50%;
+            }
+
+
+    }
+    
+    nav {
+
+        background-color: white;
+        height: 70px;
+        display: flex;
+        align-content: center;
+        -webkit-box-shadow: 0px 5px 11px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 5px 11px -1px rgba(0,0,0,0.75);
+        box-shadow: 0px 5px 11px -1px rgba(0,0,0,0.1);
+        
+
+        img {
+            width:7.5rem;
+        }
+    
+        .nav-link {
+            font-size: 1.3rem;
+            margin: 0 2rem;
+            color: #000;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+
+        @include mediaqueri(desktop){
+            
+            .nav-link i {
+                display: none;
+            }
+            .nav-link::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 0;
+                height: 2px;
+                visibility: hidden;
+                background-color: $main-color;
+                transition: width .2s ease-in-out;
+            }
+            
+            .nav-link:hover::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                height: 2px;
+                visibility: visible;
+                background-color: #FF9E00;
+            }
+            
+            .nav-link.active::before {
+                width: 100%;
+                visibility: visible;
+            }
+    
+        }
+
+        @include mediaqueri(tablet) {
+
+            .nav-link {
+                margin: 1rem 0;
+                padding: 1rem 0;
+            }
+            i {
+                color: #FF9E00;
+            }
+    
+            .navbar-toggler {
+                border: none;
+                font-size: 1.6rem;
+            }
+            
+            .navbar-toggler:focus {
+                box-shadow: none;
+            }
+        }
+
+    }
+}
