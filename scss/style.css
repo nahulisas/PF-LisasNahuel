@@ -294,7 +294,6 @@ html .contenido-index .box-index {
   flex-wrap: wrap;
   justify-content: space-evenly;
   border-bottom: 1px solid lightgrey;
-  padding: 10rem 0;
 }
 html .contenido-index .box-index .index-item {
   padding: 1rem;
