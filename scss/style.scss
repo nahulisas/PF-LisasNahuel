@@ -444,6 +444,8 @@ html {
         object-fit: cover;
         cursor: pointer;
         filter: grayscale(1);
+        transition: filter .5s ease;
+        
 
         @include mediaqueri (md) {
             filter: grayscale(0);
@@ -453,6 +455,8 @@ html {
     .galeria__fotos img:hover {
         filter: grayscale(0);
         object-fit: cover;
+        transition: filter 1s ease;
+        
     }
 
     .galeria__imagen:nth-child(1) {
@@ -535,6 +539,10 @@ html {
         grid-template-columns: 40% 40%;
         gap: 2.5rem 2rem;
 
+        @include mediaqueri(md) {
+            grid-template-columns: 60%;
+        }
+        
         @include mediaqueri(sm) {
             grid-template-columns: 1fr;
         }

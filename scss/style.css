@@ -372,6 +372,7 @@ html .box-index:nth-last-child(1) {
      object-fit: cover;
   cursor: pointer;
   filter: grayscale(1);
+  transition: filter 0.5s ease;
 }
 @media screen and (max-width: 768px) {
   .galeria__fotos img {
@@ -383,6 +384,7 @@ html .box-index:nth-last-child(1) {
   filter: grayscale(0);
   -o-object-fit: cover;
      object-fit: cover;
+  transition: filter 1s ease;
 }
 
 .galeria__imagen:nth-child(1) {
@@ -458,6 +460,11 @@ html .box-index:nth-last-child(1) {
   justify-content: center;
   grid-template-columns: 40% 40%;
   gap: 2.5rem 2rem;
+}
+@media screen and (max-width: 768px) {
+  .contacto__formulario {
+    grid-template-columns: 60%;
+  }
 }
 @media screen and (max-width: 468px) {
   .contacto__formulario {
