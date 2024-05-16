@@ -700,6 +700,3 @@ footer .logo-footer {
         grid-row: span 1;
     }
 }
-
-@media screen and (width <= 480px) {
-}

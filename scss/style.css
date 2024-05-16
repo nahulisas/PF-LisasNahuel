@@ -3,6 +3,77 @@ html {
   /*=============== HEADER ==================*/
   /*=============== FOOTER ==================*/
   /*=============== INDEX ==================*/
+  /* .contenido-index {
+         justify-content: center;
+
+         .box-index {
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: space-evenly;
+             border-bottom: 1px solid lightgrey;
+
+             .index-item {
+                 padding: 1rem;
+                 width: 45%;
+
+                 @include mediaqueri(md) {
+                     width: 100%;
+                     margin: 1rem 0;
+                 }
+             }
+
+
+             }
+
+             img {
+                 width: 100%;
+                 height: 400px;
+                 border-radius: 7px;
+                 object-fit: cover;
+             }
+
+             a {
+                 bottom: 0;
+                 display: block;
+                 text-align: center;
+                 color: white;
+                 font-size: 1.2rem;
+                 width: 100px;
+                 padding: 1rem;
+                 text-decoration: none;
+                 background-color: $main-color;
+                 transition: all 0.3s ease;
+                 border-radius: 7px;
+                 border: 1px solid transparent;
+                 margin: 1rem 0;
+             }
+
+             a:hover {
+                 background-color: white;
+                 color: $main-color;
+                 border: 1px solid $main-color;
+             }     
+         }
+
+         .box-index:nth-child(2n) {
+             flex-direction: row-reverse;
+         }
+
+         .box-index .index-item:nth-child(1) {
+             margin: 0 1rem;
+         }
+
+         .box-index:nth-last-child(1) {
+             border: 0;
+         }
+
+
+     }
+  */
+  /*=============== GALERIA ==================*/
+  /*=============== QUE HACER ==================*/
+  /*=============== CONTACTO ==================*/
+  /*=============== PLANEA TU VIAJE ==================*/
 }
 html * {
   margin: 0;
@@ -242,7 +313,6 @@ html .footer {
   display: flex;
   width: 100%;
   height: auto;
-  margin-top: 2rem;
   padding: 2rem;
   align-items: center;
   justify-content: center;
@@ -286,152 +356,116 @@ html .footer .social-media i:hover {
   border: 1px solid #707070;
   transition: all 0.3s ease;
 }
-html .contenido-index {
-  justify-content: center;
-}
-html .contenido-index .box-index {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  border-bottom: 1px solid lightgrey;
-}
-html .contenido-index .box-index .index-item {
-  padding: 1rem;
-  width: 45%;
-}
-@media screen and (max-width: 768px) {
-  html .contenido-index .box-index .index-item {
-    width: 100%;
-    margin: 1rem 0;
-  }
-}
-html .contenido-index img {
+html .index {
   width: 100%;
+}
+html .index .main__section {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+}
+html .index .main__section:nth-child(even) {
+  background-color: rgba(241, 241, 241, 0.6823529412);
+  flex-direction: row-reverse;
+}
+html .index .main__section article,
+html .index .main__section aside {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+html .index .main__section article {
+  align-items: flex-start;
+  gap: 1rem;
+}
+html .index .main__section aside img {
+  border-radius: 50%;
+  width: 400px;
   height: 400px;
-  border-radius: 7px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-html .contenido-index a {
-  bottom: 0;
-  display: block;
-  text-align: center;
-  color: white;
-  font-size: 1.2rem;
-  width: 100px;
-  padding: 1rem;
-  text-decoration: none;
-  background-color: #FF9E00;
-  transition: all 0.3s ease;
-  border-radius: 7px;
-  border: 1px solid transparent;
-  margin: 1rem 0;
-}
-html .contenido-index a:hover {
-  background-color: white;
+html .index .main__section p:nth-child(2) {
   color: #FF9E00;
-  border: 1px solid #FF9E00;
 }
-html .box-index:nth-child(2n) {
-  flex-direction: row-reverse;
-}
-html .box-index .index-item:nth-child(1) {
-  margin: 0 1rem;
-}
-html .box-index:nth-last-child(1) {
-  border: 0;
-}
-
-/*=============== GALERIA ==================*/
-.galeria__fotos {
+html .galeria .galeria__contenedor {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 400px);
-  grid-auto-rows: 300px;
-  gap: 0.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.6rem;
+}
+html .galeria .galeria__contenedor img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+@media screen and (min-width: 768px) {
+  html .galeria .galeria__contenedor .galeria__item {
+    cursor: pointer;
+    filter: grayscale(1);
+    transition: 0.4s ease-in;
+  }
+  html .galeria .galeria__contenedor .galeria__item:hover {
+    filter: grayscale(0);
+    transition: 1s;
+  }
+  html .galeria .galeria__contenedor .galeria__item:nth-child(1) {
+    grid-column: 1/3;
+  }
+  html .galeria .galeria__contenedor .galeria__item:nth-child(3) {
+    grid-column: 4/-1;
+    grid-row: -11/-9;
+  }
+  html .galeria .galeria__contenedor .galeria__item:nth-child(5) {
+    grid-column: 2/4;
+  }
+  html .galeria .galeria__contenedor .galeria__item:nth-child(6) {
+    grid-row: -9/-8;
+  }
+  html .galeria .galeria__contenedor .galeria__item:nth-child(7) {
+    grid-column: 2/3;
+    grid-row: -9/-8;
+  }
+  html .galeria .galeria__contenedor .galeria__item:nth-child(8) {
+    grid-column: 3/5;
+  }
+  html .galeria .galeria__contenedor .galeria__item:nth-child(9) {
+    grid-column: 1/3;
+  }
 }
 @media screen and (max-width: 768px) {
-  .galeria__fotos {
+  html .galeria .galeria__contenedor {
     grid-template-columns: 1fr;
   }
 }
-
-.galeria__imagen {
-  display: flex;
-  overflow: hidden;
+html .quehacer .main__section:nth-child(1) {
+  background-color: #FF9E00;
 }
-
-.galeria a {
-  text-decoration: none;
-  color: #000;
+html .quehacer .main__section:nth-child(odd):not(:first-child) {
+  background-color: rgba(241, 241, 241, 0.6823529412);
 }
-
-.galeria__fotos img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  cursor: pointer;
-  filter: grayscale(1);
-  transition: filter 0.5s ease;
-}
-@media screen and (max-width: 768px) {
-  .galeria__fotos img {
-    filter: grayscale(0);
-  }
-}
-
-.galeria__fotos img:hover {
-  filter: grayscale(0);
-  -o-object-fit: cover;
-     object-fit: cover;
-  transition: filter 1s ease;
-}
-
-.galeria__imagen:nth-child(1) {
-  grid-column: span 2;
-}
-
-.galeria__imagen:nth-child(2) {
-  grid-row: span 2;
-}
-
-.galeria__imagen:nth-child(5) {
-  grid-row: span 2;
-}
-
-.galeria__imagen:nth-child(10) {
-  grid-row: span 2;
-}
-
-.galeria__imagen:nth-child(11) {
-  grid-row: span 2;
-}
-
-/*=============== QUE HACER ==================*/
-.main__section span {
+html .quehacer span {
   font-size: 1.2rem;
 }
-
-.quehacer section:nth-child(1) {
-  background-color: #FF9E00;
-  color: white;
+html .quehacer .row {
+  gap: 6rem 0rem;
 }
-
-.row {
-  gap: 2rem 0;
-}
-
-.card {
+html .quehacer .row .card {
   border: none;
+  width: 300px;
+  background-color: transparent;
 }
-
-.card-body {
+html .quehacer .row .card .card-body {
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
+  gap: 1.5rem;
 }
-
-.card__btn {
+html .quehacer .row .card .card__btn {
   background-color: #FF9E00;
   display: block;
   color: #fff;
@@ -445,15 +479,12 @@ html .box-index:nth-last-child(1) {
   font-size: 1.5rem;
   transition: all 0.2s ease;
 }
-
-.card__btn:hover {
+html .quehacer .row .card .card__btn:hover {
   background-color: transparent;
   border: 1px solid #FF9E00;
   color: #FF9E00;
 }
-
-/*=============== CONTACTO ==================*/
-.contacto__formulario {
+html .contacto__formulario {
   width: 100%;
   background: 100%;
   display: grid;
@@ -462,17 +493,16 @@ html .box-index:nth-last-child(1) {
   gap: 2.5rem 2rem;
 }
 @media screen and (max-width: 768px) {
-  .contacto__formulario {
+  html .contacto__formulario {
     grid-template-columns: 60%;
   }
 }
 @media screen and (max-width: 468px) {
-  .contacto__formulario {
+  html .contacto__formulario {
     grid-template-columns: 1fr;
   }
 }
-
-.contacto__formulario input {
+html .contacto__formulario input {
   padding: 1rem;
   border: none;
   height: 30px;
@@ -482,17 +512,14 @@ html .box-index:nth-last-child(1) {
   color: black;
   box-shadow: -7px 7px 24px -12px rgba(143, 143, 143, 0.59);
 }
-
-.contacto__formulario input::-moz-placeholder, .contacto__formulario textarea::-moz-placeholder {
+html .contacto__formulario input::-moz-placeholder, html .contacto__formulario textarea::-moz-placeholder {
   opacity: 0.4;
 }
-
-.contacto__formulario input::placeholder,
-.contacto__formulario textarea::placeholder {
+html .contacto__formulario input::placeholder,
+html .contacto__formulario textarea::placeholder {
   opacity: 0.4;
 }
-
-.contacto__formulario textarea {
+html .contacto__formulario textarea {
   grid-column: 1/-1;
   padding: 1rem;
   border: none;
@@ -503,8 +530,7 @@ html .box-index:nth-last-child(1) {
   color: black;
   box-shadow: -7px 7px 24px -12px rgba(143, 143, 143, 0.59);
 }
-
-.contacto__formulario button {
+html .contacto__formulario button {
   display: block;
   width: 15rem;
   padding: 1rem;
@@ -515,34 +541,28 @@ html .box-index:nth-last-child(1) {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
-.contacto__formulario button:hover {
+html .contacto__formulario button:hover {
   background-color: white;
   border: 1px solid #FF9E00;
   color: #FF9E00;
 }
-
-/*=============== PLANEA TU VIAJE ==================*/
-.planear__box--reverse {
+html .planear__box--reverse {
   flex-direction: row-reverse;
 }
-
-.planear__img {
+html .planear__img {
   width: 100%;
   height: 70rem;
   margin: 4rem 0;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-.planear__box {
+html .planear__box {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
-.planear__box__item {
+html .planear__box__item {
   flex-direction: column;
   justify-content: space-around;
   align-content: center;
@@ -550,17 +570,15 @@ html .box-index:nth-last-child(1) {
   margin: 2rem;
 }
 @media screen and (max-width: 768px) {
-  .planear__box__item {
+  html .planear__box__item {
     width: 100%;
   }
 }
-
-.planear__box__item span {
+html .planear__box__item span {
   font-size: 5rem;
   color: #fff;
 }
-
-.planear__box__item:nth-child(1) {
+html .planear__box__item:nth-child(1) {
   width: 30rem;
   height: 30rem;
   border-radius: 1rem;
@@ -568,19 +586,17 @@ html .box-index:nth-last-child(1) {
   background-color: #FF9E00;
 }
 @media screen and (max-width: 768px) {
-  .planear__box__item:nth-child(1) {
+  html .planear__box__item:nth-child(1) {
     width: 100%;
   }
 }
-
-.planear__box__item h3 {
+html .planear__box__item h3 {
   color: white;
   margin: 0 auto;
   font-weight: lighter;
   text-align: center;
 }
-
-.planear__box a {
+html .planear__box a {
   display: block;
   width: 200px;
   text-decoration: none;
@@ -594,8 +610,7 @@ html .box-index:nth-last-child(1) {
   margin-top: 2rem;
   transition: all 0.5s ease;
 }
-
-.planear__box a:hover {
+html .planear__box a:hover {
   background-color: white;
   border: 1px solid #FF9E00;
   color: #FF9E00;

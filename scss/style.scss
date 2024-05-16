@@ -3,7 +3,10 @@
 
 html {
 
+
     font-size: 62.5%;
+
+
 
     * {
         margin: 0;
@@ -287,7 +290,6 @@ html {
         display: flex;
         width: 100%;
         height: auto;
-        margin-top: 2rem;
         padding: 2rem;
         align-items: center;
         justify-content: center;
@@ -346,7 +348,61 @@ html {
 
     /*=============== INDEX ==================*/
 
-    .contenido-index {
+
+    .index {
+
+    width: 100%;
+
+        
+
+        .main__section {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-content: center;
+
+            &:nth-child(even) {
+                background-color: $bg-secundary;
+                flex-direction: row-reverse;
+            }
+
+
+            article,
+            aside {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            }
+
+            article {
+            
+            align-items: flex-start;
+            gap: 1rem;
+            
+            }
+
+            aside img {
+                border-radius: 50%;
+                width: 400px;
+                height: 400px;
+                object-fit: cover;
+            }
+
+            p {
+                &:nth-child(2) {
+                    color: $main-color;
+                }
+            }
+        }
+
+
+    }
+
+    
+
+    /* .contenido-index {
         justify-content: center;
 
         .box-index {
@@ -412,122 +468,165 @@ html {
 
         
     }
-
+ */
 
     /*=============== GALERIA ==================*/
 
-    .galeria__fotos {
 
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(5,400px);
-        grid-auto-rows: 300px;
-        gap: .5rem;
+    .galeria {
 
-        @include mediaqueri(md) {
-            grid-template-columns: 1fr;
+        .galeria__contenedor {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: .6rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center center;
+
+            }
+
+            @include mediaqueri(lg){
+
+                .galeria__item {
+
+                    cursor: pointer;
+                    filter: grayscale(1);
+                    transition: .4s ease-in;
+    
+                    &:hover {
+                        filter: grayscale(0);
+                        transition: 1s;
+                    }
+    
+                    &:nth-child(1) {
+                        grid-column: 1  / 3;
+                    }
+    
+                    &:nth-child(3) {
+                        grid-column: 4 / -1;
+                        grid-row: -11 / -9;
+                    }
+    
+                    &:nth-child(5) {
+                        grid-column: 2  / 4;
+                    }
+    
+                    &:nth-child(6) {
+                        grid-row: -9 / -8;
+                    }
+    
+                    &:nth-child(7) {
+                        grid-column: 2  / 3;
+                        grid-row: -9 / -8;
+                        
+                    }
+    
+                    &:nth-child(8) {
+                        grid-column: 3 / 5;
+                    }
+    
+                    &:nth-child(9) {
+                        grid-column: 1 / 3;
+                    } 
+    
+                }
+            }
+
+
+            @include mediaqueri(md) {
+                grid-template-columns: 1fr;
+            }
+
+
+
+            
+
+            
+
+            
+
+
         }
-    }
 
-    .galeria__imagen {
-        display: flex;
-        overflow: hidden;
-    }
+        
+                
 
-    .galeria a {
-        text-decoration: none;
-        color: #000;
-    }
+                
+                
+            
 
-    .galeria__fotos img {
-        width: 100%;
-        object-fit: cover;
-        cursor: pointer;
-        filter: grayscale(1);
-        transition: filter .5s ease;
+
         
 
-        @include mediaqueri (md) {
-            filter: grayscale(0);
-        }
     }
+    
+    
 
-    .galeria__fotos img:hover {
-        filter: grayscale(0);
-        object-fit: cover;
-        transition: filter 1s ease;
-        
-    }
-
-    .galeria__imagen:nth-child(1) {
-        grid-column: span 2;
-    }
-
-    .galeria__imagen:nth-child(2) {
-        grid-row: span 2;
-    }
-
-    .galeria__imagen:nth-child(5) {
-        grid-row: span 2;
-    }
-
-    .galeria__imagen:nth-child(10) {
-        grid-row: span 2;
-    }
-
-    .galeria__imagen:nth-child(11) {
-        grid-row: span 2;
-    }
 
 
 
     /*=============== QUE HACER ==================*/
 
-    .main__section span {
 
-        font-size: 1.2rem;
+    .quehacer {
+
+        .main__section{
+            &:nth-child(1) {
+                background-color: $main-color;
+            }
+            &:nth-child(odd):not(:first-child) {
+                background-color: $bg-secundary;
+            }
+        }
+
+        span {
+            font-size: 1.2rem;
+        }
+        .row {
+            gap: 6rem 0rem;
+    
+            .card {
+                border: none;
+                width: 300px;
+                background-color: transparent;
+        
+                .card-body {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.5rem;
+                }
+                .card__btn {
+                    background-color: $main-color;
+                    display: block;
+                    color: #fff;
+                    text-decoration: none;
+                    text-align: center;
+                    border-radius: .8rem;
+                    padding: .5rem 1.2rem;
+                    cursor: pointer;
+                    border: 1px solid transparent;
+                    width: 100px;
+                    font-size: 1.5rem;
+                    transition: all .2s ease;
+                }
+            
+                .card__btn:hover {
+                    background-color: transparent;
+                    border: 1px solid $main-color;
+                    color: $main-color;
+                }
+        }
+        
+        
+        }
 
     }
+    
 
-    .quehacer section:nth-child(1) {
-        background-color: $main-color;
-        color: white;
-
-    }
-
-    .row {
-        gap: 2rem 0;
-    }
-    .card {
-    border: none;
-    }
-
-    .card-body {
-        display: flex;
-        flex-direction: column;
-        gap: .2rem;
-    }
-    .card__btn {
-        background-color: $main-color;
-        display: block;
-        color: #fff;
-        text-decoration: none;
-        text-align: center;
-        border-radius: .8rem;
-        padding: .5rem 1.2rem;
-        cursor: pointer;
-        border: 1px solid transparent;
-        width: 100px;
-        font-size: 1.5rem;
-        transition: all .2s ease;
-    }
-
-    .card__btn:hover {
-        background-color: transparent;
-        border: 1px solid $main-color;
-        color: $main-color;
-    }
-
+    
     /*=============== CONTACTO ==================*/
 
 
@@ -677,7 +776,7 @@ html {
 
     }
 
-
+}
     
 
 

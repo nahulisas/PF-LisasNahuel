@@ -4,21 +4,22 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/x-icon" href="../img/logo.png" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
             rel="stylesheet"
             integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="../scss/style.css" />
+        <link rel="stylesheet" href="scss/style.css" />
         <script
             src="https://kit.fontawesome.com/113a7d4d7b.js"
             crossorigin="anonymous"
         ></script>
-        <link
+        <!-- <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-        />
+        /> -->
         <title>Viví El Chalten | Home</title>
     </head>
     <body>
@@ -142,107 +143,132 @@
             </nav>
         </header>
         <!-- CONTENIDO -->
-        <div class="contenedor">
-            <div class="contenido-index">
-                <section class="main__section box-index">
-                    <div class="index-item">
-                        <h2>Bienvenidos</h2>
-                        <p>
-                            Una joven villa turística en la Patagonia, al pie
-                            del inconfundible cerro Chaltén ó Fitz Roy. Es
-                            conocida mundialmente como la Capital Argentina del
-                            Trekking por sus múltiples opciones para realizar
-                            deportes de montaña en un escenario natural sin
-                            igual. pariatur.
-                        </p>
-                        <a href="">Ver mas</a>
-                    </div>
-                    <div class="index-item">
-                        <img src="img/index/img1.jpg" alt="imagen" />
-                    </div>
-                </section>
-                <section class="main__section box-index">
-                    <div class="index-item">
-                        <h2>El Chalten, origen del nombre</h2>
-                        <p>
-                            Su nombre se lo debe a la mítica montaña que se
-                            destaca del resto de los picos que la rodean.
-                            Chaltén es un término de la lengua aonikenk con la
-                            que los antiguos Tehuelches nombraban a esta montaña
-                            que consideraban sagrada. Su significado es montaña
-                            humeante, pues ésa es la impresión que da cuando las
-                            nubes se encolumnan con el viento en su cima.
-                        </p>
-                        <a href="">Ver mas</a>
-                    </div>
-                    <div class="index-item">
-                        <img src="img/index/pueblo.jpg" alt="imagen" />
-                    </div>
-                </section>
-                <section class="main__section box-index">
-                    <div class="index-item">
-                        <h2>Nuestra geografia</h2>
-                        <p>
-                            El pueblo está en una ecoregión denominada ecotono,
-                            la transición entre la estepa y el bosque. La
-                            planicie da lugar de manera abrupta a un sistema
-                            montañoso con boscosos valles zurcados por ríos y
-                            arroyos. Las estaciones están bien definidas durante
-                            el año: el verano es templado con temperaturas
-                            medias de 12ºC, días con muchas horas de luz solar,
-                            normalmente ventosos y moderadas lluvias. El
-                            invierno es frío, con una temperatura media de 2ºC,
-                            días cortos, poco viento y esporádicas nevadas.
-                        </p>
-                        <a href="">Ver mas</a>
-                    </div>
-                    <div class="index-item">
-                        <img src="img/index/geografia.jpg" alt="imagen" />
-                    </div>
-                </section>
-                <section class="main__section box-index">
-                    <div class="index-item">
-                        <h2>Vida silvestre</h2>
-                        <p>
-                            En esta casi deshabitada latitud del planeta la vida
-                            silvestre encuentra en sus valles y montañas un
-                            paraíso que en su gran mayoría continúa siendo
-                            virgen. Muchos seres vivos sólo pueden existir en
-                            éstas condiciones ideales. El mejor ejemplo de la
-                            fragilidad de éste ambiente protegido por el Parque
-                            Nacional lo representa el huemul, un ciervo endémico
-                            en peligro de extinción.
-                        </p>
-                        <a href="">Ver mas</a>
-                    </div>
-                    <div class="index-item">
-                        <img src="img/index/vidasilvestre.jpg" alt="imagen" />
-                    </div>
-                </section>
-                <section class="main__section box-index">
-                    <div class="index-item">
-                        <h2>Capital del trekking</h2>
-                        <p>
-                            El 12 de enero de 2015, mediante la Ley Nacional
-                            27.055 se declaró a El Chaltén "Capital Nacional del
-                            Trekking". De esta manera se reconoce oficialmente y
-                            se pone en valor a la extraordinaria combinación de
-                            elementos que sólo se dan en El Chaltén para los
-                            deportes de montaña: un ambiente natural prístino y
-                            protegido, numerosos circuitos de trekking con
-                            variados grados de dificultad, decenas de rutas de
-                            escalada de altísima dificultad técnica, y una
-                            localidad de servicios que se desarrolla en función
-                            del turismo activo.
-                        </p>
-                        <a href="">Ver mas</a>
-                    </div>
-                    <div class="index-item">
-                        <img src="img/planea/planea-banner.jpg" alt="imagen" />
-                    </div>
-                </section>
-            </div>
-        </div>
+        <main class="index">
+            <section class="main__section">
+                <article
+                    class="main__section__box"
+                    data-aos="fade-right"
+                    data-aos-delay="300"
+                >
+                    <h2>Bienvenidos</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Unde nisi dolor cumque officiis, autem laborum
+                        ipsum veniam sint commodi. Atque.
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Temporibus quaerat rerum quasi, ipsa nisi officia
+                        eius rem dolorem labore, debitis sapiente quae
+                        inventore, hic fuga magni error illum suscipit corrupti
+                        non sit deserunt accusantium cumque. Iste quibusdam
+                        magnam voluptas enim inventore, blanditiis ipsum
+                        repellendus accusamus veniam consequatur aspernatur
+                        nihil illo!
+                    </p>
+                </article>
+                <aside
+                    class="main__section-box"
+                    data-aos="fade-left"
+                    data-aos-delay="300"
+                >
+                    <img src="img/index/img1.jpg" alt="imagen 1" />
+                </aside>
+            </section>
+            <section class="main__section">
+                <article
+                    class="main__section__box"
+                    data-aos="fade-left"
+                    data-aos-delay="300"
+                >
+                    <h2>Bienvenidos</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Unde nisi dolor cumque officiis, autem laborum
+                        ipsum veniam sint commodi. Atque.
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Temporibus quaerat rerum quasi, ipsa nisi officia
+                        eius rem dolorem labore, debitis sapiente quae
+                        inventore, hic fuga magni error illum suscipit corrupti
+                        non sit deserunt accusantium cumque. Iste quibusdam
+                        magnam voluptas enim inventore, blanditiis ipsum
+                        repellendus accusamus veniam consequatur aspernatur
+                        nihil illo!
+                    </p>
+                </article>
+                <aside
+                    class="main__section-box"
+                    data-aos="fade-right"
+                    data-aos-delay="300"
+                >
+                    <img src="img/index/pueblo.jpg" alt="imagen 1" />
+                </aside>
+            </section>
+            <section class="main__section">
+                <article
+                    class="main__section__box"
+                    data-aos="fade-right"
+                    data-aos-delay="300"
+                >
+                    <h2>Bienvenidos</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Unde nisi dolor cumque officiis, autem laborum
+                        ipsum veniam sint commodi. Atque.
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Temporibus quaerat rerum quasi, ipsa nisi officia
+                        eius rem dolorem labore, debitis sapiente quae
+                        inventore, hic fuga magni error illum suscipit corrupti
+                        non sit deserunt accusantium cumque. Iste quibusdam
+                        magnam voluptas enim inventore, blanditiis ipsum
+                        repellendus accusamus veniam consequatur aspernatur
+                        nihil illo!
+                    </p>
+                </article>
+                <aside
+                    class="main__section-box"
+                    data-aos="fade-left"
+                    data-aos-delay="300"
+                >
+                    <img src="img/index/geografia.jpg" alt="imagen 1" />
+                </aside>
+            </section>
+            <section class="main__section">
+                <article
+                    class="main__section__box"
+                    data-aos="fade-left"
+                    data-aos-delay="300"
+                >
+                    <h2>Bienvenidos</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Unde nisi dolor cumque officiis, autem laborum
+                        ipsum veniam sint commodi. Atque.
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Temporibus quaerat rerum quasi, ipsa nisi officia
+                        eius rem dolorem labore, debitis sapiente quae
+                        inventore, hic fuga magni error illum suscipit corrupti
+                        non sit deserunt accusantium cumque. Iste quibusdam
+                        magnam voluptas enim inventore, blanditiis ipsum
+                        repellendus accusamus veniam consequatur aspernatur
+                        nihil illo!
+                    </p>
+                </article>
+                <aside
+                    class="main__section-box"
+                    data-aos="fade-right"
+                    data-aos-delay="300"
+                >
+                    <img src="img/index/vidasilvestre.jpg" alt="imagen 1" />
+                </aside>
+            </section>
+        </main>
         <!-- FOOTER -->
         <footer class="footer">
             <img src="../img/logo.png" alt="" class="logo-footer" />
@@ -275,5 +301,9 @@
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"
         ></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
