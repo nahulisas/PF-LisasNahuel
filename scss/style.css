@@ -259,7 +259,7 @@ html .header nav .nav-link {
   position: relative;
   text-transform: uppercase;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   html .header nav .nav-link i {
     display: none;
   }
@@ -437,7 +437,7 @@ html .galeria .galeria__contenedor img {
     height: 400px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) {
   html .galeria .galeria__contenedor .galeria__item {
     cursor: pointer;
     filter: grayscale(1);
@@ -603,7 +603,7 @@ html .contenedor-grid > * {
     grid-column: fullwidth;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) {
   html .contenedor-grid > * {
     grid-column: breakout;
   }

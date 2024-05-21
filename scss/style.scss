@@ -221,8 +221,7 @@ html {
                 text-transform: uppercase;
             }
 
-            @include mediaqueri(lg);
-            @include mediaqueri(xl) {
+            @include mediaqueri(lg) {
                 
                 .nav-link i {
                     display: none;
