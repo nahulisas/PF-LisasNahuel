@@ -711,7 +711,9 @@ html {
             gap: 3rem;
         }
 
-
+        .row {
+            display: flex;
+        }
 
         .main__btn {
             background-color: $main-color;
@@ -734,8 +736,9 @@ html {
             color: $main-color;
         }
 
+
         
-    }
+}
 
     
 

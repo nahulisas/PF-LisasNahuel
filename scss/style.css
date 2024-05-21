@@ -623,6 +623,9 @@ html .contenedor-grid .grid__box__item {
   flex-direction: column;
   gap: 3rem;
 }
+html .contenedor-grid .row {
+  display: flex;
+}
 html .contenedor-grid .main__btn {
   background-color: #FF9E00;
   display: inline-block;
